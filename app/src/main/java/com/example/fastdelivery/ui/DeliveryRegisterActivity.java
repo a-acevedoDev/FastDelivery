@@ -96,7 +96,7 @@ public class DeliveryRegisterActivity extends AppCompatActivity {
         delivery.setLatitude(calculatedLatitude);
         delivery.setLongitude(calculatedLongitude);
         delivery.setAmountToPay(amountToPay);
-        delivery.setDeliveryStatus(DeliveryStatus.PENDIENTE);
+        delivery.setDeliveryStatusEnum(DeliveryStatus.PENDIENTE);
         delivery.setObservation(observation);
 
         AppDatabase.getInstance(this).deliveryDao().insert(delivery);

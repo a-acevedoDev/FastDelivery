@@ -8,8 +8,8 @@ import androidx.room.PrimaryKey;
 public class Delivery {
 
     @PrimaryKey(autoGenerate = true)
-
     private Long id;
+
     @ColumnInfo(name = "client_name")
     private String clientName;
 
@@ -88,11 +88,19 @@ public class Delivery {
         this.amountToPay = amountToPay;
     }
 
-    public DeliveryStatus getDeliveryStatus() {
+    public String getDeliveryStatus() {
+        return deliveryStatus;
+    }
+
+    public void setDeliveryStatus(String deliveryStatus) {
+        this.deliveryStatus = deliveryStatus;
+    }
+
+    public DeliveryStatus getDeliveryStatusEnum() {
         return deliveryStatus == null ? null : DeliveryStatus.valueOf(deliveryStatus);
     }
 
-    public void setDeliveryStatus(DeliveryStatus status) {
+    public void setDeliveryStatusEnum(DeliveryStatus status) {
         this.deliveryStatus = status == null ? null : status.name();
     }
 
