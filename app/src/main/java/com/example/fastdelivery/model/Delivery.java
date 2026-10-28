@@ -25,7 +25,7 @@ public class Delivery {
     private double amountToPay;
 
     @ColumnInfo(name = "delivery_status")
-    private DeliveryStatus deliveryStatus;
+    private String deliveryStatus = DeliveryStatus.PENDIENTE.name();
 
     private String observation;
 
@@ -89,11 +89,11 @@ public class Delivery {
     }
 
     public DeliveryStatus getDeliveryStatus() {
-        return deliveryStatus;
+        return deliveryStatus == null ? null : DeliveryStatus.valueOf(deliveryStatus);
     }
 
-    public void setDeliveryStatus(DeliveryStatus deliveryStatus) {
-        this.deliveryStatus = deliveryStatus;
+    public void setDeliveryStatus(DeliveryStatus status) {
+        this.deliveryStatus = status == null ? null : status.name();
     }
 
     public String getObservation() {
