@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F8FAFC">
+
+    <ImageView
+        android:id="@+id/imgFingerprint"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:contentDescription="Huella Dactilar"
+        android:src="@android:drawable/ic_lock_lock"
+        app:tint="#1E293B" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="FastDelivery"
+        android:textColor="#1E293B"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Utilice su huella dactilar para acceder al panel de repartos"
+        android:textColor="#64748B"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnAuthBiometric"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:text="Ingresar con Huella"
+        android:textAllCaps="false"
+        android:textSize="16sp" />
+
+</LinearLayout>
