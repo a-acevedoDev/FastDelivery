@@ -43,7 +43,6 @@ public class MapActivity extends AppCompatActivity {
         mapView = findViewById(R.id.mapView);
         FloatingActionButton fabMyLocation = findViewById(R.id.fabMyLocation);
 
-        // 2. USAR OPENSTREETMAP OFICIAL (HTTPS)
         mapView.setTileSource(new org.osmdroid.tileprovider.tilesource.XYTileSource(
                 "OpenStreetMap",
                 0, 19, 256, ".png",
@@ -55,17 +54,13 @@ public class MapActivity extends AppCompatActivity {
         mapView.setMultiTouchControls(true);
         mapView.getController().setZoom(15.0);
 
-        // 3. CENTRAR POR DEFECTO EN CHILE (Santiago) para que no abra en medio del océano o en Europa
         GeoPoint santiagoChile = new GeoPoint(-33.4489, -70.6693);
         mapView.getController().setCenter(santiagoChile);
 
-        // 4. Solicitar permisos de GPS
         checkAndRequestPermissions();
 
-        // 5. Configurar la capa para mostrar tu posición GPS (Punto Azul)
         setupMyLocationOverlay();
 
-        // 6. Botón flotante para centrar la cámara en tu posición GPS actual
         fabMyLocation.setOnClickListener(v -> {
             if (locationOverlay != null && locationOverlay.getMyLocation() != null) {
                 mapView.getController().animateTo(locationOverlay.getMyLocation());
@@ -75,7 +70,6 @@ public class MapActivity extends AppCompatActivity {
             }
         });
 
-        // 7. Cargar marcadores guardados desde SQLite vía Room
         loadDeliveriesFromDatabase();
     }
 
