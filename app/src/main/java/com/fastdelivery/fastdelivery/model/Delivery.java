@@ -1,4 +1,4 @@
-package com.example.fastdelivery.model;
+package com.fastdelivery.fastdelivery.model;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;

@@ -1,4 +1,4 @@
-package com.example.fastdelivery.utils;
+package com.fastdelivery.fastdelivery.utils;
 
 import android.content.Context;
 import androidx.biometric.BiometricManager;

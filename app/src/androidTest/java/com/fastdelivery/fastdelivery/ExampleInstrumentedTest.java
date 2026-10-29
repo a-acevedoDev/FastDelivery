@@ -1,4 +1,4 @@
-package com.example.fastdelivery;
+package com.fastdelivery.fastdelivery;
 
 import android.content.Context;
 

@@ -1,4 +1,4 @@
-package com.example.fastdelivery.database;
+package com.fastdelivery.fastdelivery.database;
 
 import androidx.room.Dao;
 import androidx.room.Delete;
@@ -6,7 +6,7 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.example.fastdelivery.model.Delivery;
+import com.fastdelivery.fastdelivery.model.Delivery;
 
 import java.util.List;
 

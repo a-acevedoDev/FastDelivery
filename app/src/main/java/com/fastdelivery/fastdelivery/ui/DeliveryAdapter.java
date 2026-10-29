@@ -1,4 +1,4 @@
-package com.example.fastdelivery.ui;
+package com.fastdelivery.fastdelivery.ui;
 
 import android.graphics.Color;
 import android.view.LayoutInflater;
@@ -9,9 +9,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.fastdelivery.R;
-import com.example.fastdelivery.model.Delivery;
-import com.example.fastdelivery.model.DeliveryStatus;
+import com.fastdelivery.fastdelivery.R;
+import com.fastdelivery.fastdelivery.model.Delivery;
+import com.fastdelivery.fastdelivery.model.DeliveryStatus;
 
 import java.util.List;
 import java.util.Locale;

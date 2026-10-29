@@ -1,4 +1,4 @@
-package com.example.fastdelivery.ui;
+package com.fastdelivery.fastdelivery.ui;
 
 import android.os.Bundle;
 import android.widget.Button;
@@ -7,10 +7,10 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.fastdelivery.R;
-import com.example.fastdelivery.database.AppDatabase;
-import com.example.fastdelivery.model.Delivery;
-import com.example.fastdelivery.model.DeliveryStatus;
+import com.fastdelivery.fastdelivery.R;
+import com.fastdelivery.fastdelivery.database.AppDatabase;
+import com.fastdelivery.fastdelivery.model.Delivery;
+import com.fastdelivery.fastdelivery.model.DeliveryStatus;
 
 import java.util.Locale;
 

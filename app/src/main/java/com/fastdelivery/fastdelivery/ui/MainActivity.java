@@ -1,4 +1,4 @@
-package com.example.fastdelivery.ui;
+package com.fastdelivery.fastdelivery.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,10 +8,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.fastdelivery.R;
-import com.example.fastdelivery.database.AppDatabase;
-import com.example.fastdelivery.model.Delivery;
-import com.example.fastdelivery.model.DeliveryStatus;
+import com.fastdelivery.fastdelivery.database.AppDatabase;
+import com.fastdelivery.fastdelivery.model.Delivery;
+import com.fastdelivery.fastdelivery.model.DeliveryStatus;
+import com.fastdelivery.fastdelivery.R;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,3 +1,43 @@
 <resources>
+    <!-- Nombre de la aplicación -->
     <string name="app_name">FastDelivery</string>
+
+    <!-- General / Botones Comunes -->
+    <string name="btn_save">Guardar</string>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="btn_accept">Aceptar</string>
+    <string name="btn_delete">Eliminar</string>
+
+    <!-- LoginActivity / Biometría -->
+    <string name="login_title">Inicio de Sesión</string>
+    <string name="biometric_title">Autenticación Biométrica</string>
+    <string name="biometric_subtitle">Utilice su huella dactilar para acceder al panel de repartos</string>
+    <string name="btn_biometric_login">Ingresar con Huella</string>
+
+    <!-- MainActivity / Listado y Filtros -->
+    <string name="main_title">Lista de Repartos</string>
+    <string name="filter_all">Todos</string>
+    <string name="filter_pending">Pendientes</string>
+    <string name="filter_delivered">Entregados</string>
+    <string name="filter_canceled">Cancelados</string>
+    <string name="btn_view_map">Ver en Mapa</string>
+    <string name="btn_add_delivery">+ Nuevo Reparto</string>
+
+    <!-- DeliveryRegisterActivity / Formulario -->
+    <string name="register_title">Registrar Nuevo Reparto</string>
+    <string name="hint_client_name">Nombre del Cliente (*)</string>
+    <string name="hint_phono">Teléfono de Contacto</string>
+    <string name="hint_address">Dirección (*)</string>
+    <string name="hint_amount">Monto a Cobrar (*)</string>
+    <string name="hint_observation">Notas u Observaciones</string>
+    <string name="btn_locate">UBICAR</string>
+    <string name="btn_register">Guardar Entrega en SQLite</string>
+
+    <!-- MapActivity XML -->
+    <string name="map_title">Mapa de Encomiendas</string>
+
+    <!-- DeliveryDetailActivity XML -->
+    <string name="detail_title">Detalle del Reparto</string>
+    <string name="btn_status_delivered">Marcar ENTREGADO</string>
+    <string name="btn_status_canceled">Marcar CANCELADO</string>
 </resources>

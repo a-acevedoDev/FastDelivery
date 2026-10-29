@@ -1,4 +1,4 @@
-package com.example.fastdelivery.ui;
+package com.fastdelivery.fastdelivery.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,8 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.biometric.BiometricPrompt;
 import androidx.core.content.ContextCompat;
 
-import com.example.fastdelivery.R;
-import com.example.fastdelivery.utils.BiometricHelper;
+import com.fastdelivery.fastdelivery.R;
+import com.fastdelivery.fastdelivery.utils.BiometricHelper;
 
 import java.util.concurrent.Executor;
 

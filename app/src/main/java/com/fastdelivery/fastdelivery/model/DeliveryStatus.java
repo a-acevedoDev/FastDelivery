@@ -1,4 +1,4 @@
-package com.example.fastdelivery.model;
+package com.fastdelivery.fastdelivery.model;
 
 public enum DeliveryStatus {
     ENTREGADO,

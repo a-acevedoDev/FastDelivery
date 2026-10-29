@@ -1,4 +1,4 @@
-package com.example.fastdelivery.ui;
+package com.fastdelivery.fastdelivery.ui;
 
 import android.location.Address;
 import android.location.Geocoder;
@@ -10,10 +10,12 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.fastdelivery.R;
-import com.example.fastdelivery.database.AppDatabase;
-import com.example.fastdelivery.model.Delivery;
-import com.example.fastdelivery.model.DeliveryStatus;
+import com.fastdelivery.fastdelivery.R;
+import com.fastdelivery.fastdelivery.database.AppDatabase;
+import com.fastdelivery.fastdelivery.model.Delivery;
+import com.fastdelivery.fastdelivery.model.DeliveryStatus;
+
+import org.osmdroid.config.Configuration;
 
 import java.io.IOException;
 import java.util.List;
@@ -31,6 +33,8 @@ public class DeliveryRegisterActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Configuration.getInstance().setUserAgentValue("FastDeliveryApp_EstudiantePro/1.0 (contacto@tuuniversidad.cl)"); // dominio falso para osm
 
         setContentView(R.layout.activity_delivery_register);
 

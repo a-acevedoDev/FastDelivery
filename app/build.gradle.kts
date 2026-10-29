@@ -3,13 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.fastdelivery"
-    compileSdk {
-        version = release(37)
-    }
+    namespace = "com.fastdelivery.fastdelivery"
+    compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.fastdelivery"
+        applicationId = "com.fastdelivery.fastdelivery"
         minSdk = 27
         targetSdk = 37
         versionCode = 1

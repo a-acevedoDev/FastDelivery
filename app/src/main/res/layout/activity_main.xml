@@ -5,88 +5,128 @@
     android:layout_height="match_parent"
     android:background="#F8FAFC">
 
-    <LinearLayout
-        android:id="@+id/llHeader"
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Mis Repartos"
-            android:textColor="#1E293B"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="2dp"
+        app:strokeColor="#E2E8F0"
+        app:strokeWidth="1dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:orientation="horizontal">
+            android:orientation="vertical"
+            android:padding="16dp">
 
-            <Button
-                android:id="@+id/btnFilterAll"
-                style="?attr/materialButtonOutlinedStyle"
-                android:layout_width="0dp"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="TODOS"
-                android:textSize="11sp" />
+                android:text="@string/main_title"
+                android:textColor="#1E293B"
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/btnFilterPending"
-                style="?attr/materialButtonOutlinedStyle"
-                android:layout_width="0dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="PENDIENTES"
-                android:textSize="11sp" />
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/btnFilterDelivered"
-                style="?attr/materialButtonOutlinedStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="ENTREGADOS"
-                android:textSize="11sp" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnFilterAll"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:text="@string/filter_all"
+                    android:textColor="#1E293B"
+                    android:textSize="11sp"
+                    app:cornerRadius="8dp"
+                    app:strokeColor="#CBD5E1" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnFilterPending"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:text="@string/filter_pending"
+                    android:textColor="#1E293B"
+                    android:textSize="11sp"
+                    app:cornerRadius="8dp"
+                    app:strokeColor="#CBD5E1" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnFilterDelivered"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/filter_delivered"
+                    android:textColor="#1E293B"
+                    android:textSize="11sp"
+                    app:cornerRadius="8dp"
+                    app:strokeColor="#CBD5E1" />
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvDeliveries"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/llBottomNav"
-        android:layout_below="@id/llHeader" />
+        android:layout_above="@id/cvBottomNav"
+        android:layout_below="@id/cvHeader"
+        android:clipToPadding="false"
+        android:padding="8dp" />
 
-    <LinearLayout
-        android:id="@+id/llBottomNav"
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvBottomNav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="#FFFFFF"
-        android:elevation="8dp"
-        android:orientation="horizontal"
-        android:padding="8dp">
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="8dp"
+        app:strokeColor="#E2E8F0"
+        app:strokeWidth="1dp">
 
-        <Button
-            android:id="@+id/btnOpenMap"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:layout_marginEnd="4dp"
-            android:text="Ver en Mapa" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp">
 
-        <Button
-            android:id="@+id/btnAddDelivery"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:layout_marginStart="4dp"
-            android:text="+ Nuevo Reparto" />
-    </LinearLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnOpenMap"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:text="@string/btn_view_map"
+                android:textColor="#0284C7"
+                android:textSize="14sp"
+                app:cornerRadius="8dp"
+                app:strokeColor="#0284C7" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAddDelivery"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:backgroundTint="#0284C7"
+                android:text="@string/btn_add_delivery"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:cornerRadius="8dp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 
 </RelativeLayout>
